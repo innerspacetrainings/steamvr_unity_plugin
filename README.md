@@ -1,12 +1,18 @@
-# **SteamVR Unity Plugin**
+# **SteamVR Load Level**
 
-Valve maintains a Unity plugin to smoothly interface SteamVR with Unity. With SteamVR developers can target one API that all the popular VR headsets can connect to. The modern SteamVR Unity Plugin manages three main things for developers: loading 3d models for VR controllers, handling input from those controllers, and estimating what your hand looks like while using those controllers. On top of managing those things we have an Interaction System example to help get your VR application off the ground. Providing concrete examples of interacting with the virtual world and our APIs.
+This is the load level utility extracted from the [Steam VR plugin](https://github.com/ValveSoftware/steamvr_unity_plugin). 
+All unused code has been removed and only leaved the minimum necessary.
 
+**This package is not compatible with SteamVR**, if you install SteamVR use their 
+[SteamVR_LoadLevel](https://github.com/ValveSoftware/steamvr_unity_plugin/blob/master/Assets/SteamVR/Scripts/SteamVR_LoadLevel.cs) class instead. 
+There will be compilation errors if not.
+
+To install add to your [package manifest](https://docs.unity3d.com/Manual/upm-manifestPrj.html) the following:
+`"eu.innerspace.loadlevelvr":  "https://github.com/innerspacetrainings/LoadLevelVR.git#1.0.0"`
 
 ### Requirements
-The SteamVR runtime must be installed. This can be downloaded from Steam under the Tools category. Or by [clicking here](https://store.steampowered.com/app/250820/SteamVR/). As developers we strongly recommend that you opt-in to SteamVR beta so you can test new features and verify your application works with the latest versions of SteamVR.
 
- * This version of the SteamVR Unity Plugin is compatible and has been tested with Unity versions 5.4 - 2019.1
+Unity 2018+
 
 ### Documentation
 Documentation can be found online here: [https://valvesoftware.github.io/steamvr_unity_plugin/](https://valvesoftware.github.io/steamvr_unity_plugin/)
