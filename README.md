@@ -15,20 +15,23 @@ To install add to your [package manifest](https://docs.unity3d.com/Manual/upm-ma
 Unity 2018+
 
 ### Documentation
-Documentation can be found online here: [https://valvesoftware.github.io/steamvr_unity_plugin/](https://valvesoftware.github.io/steamvr_unity_plugin/)
+Documentation can be found online here: [https://valvesoftware.github.io/steamvr_unity_plugin/api/Valve.VR.SteamVR_LoadLevel.html](https://valvesoftware.github.io/steamvr_unity_plugin/api/Valve.VR.SteamVR_LoadLevel.html)
 
 ### Quick Start
 
- * Follow the [Quickstart guide on this site](https://valvesoftware.github.io/steamvr_unity_plugin/articles/Quickstart.html)
+* Add the component `VR_LoadLevel` to a GameObject. Be aware, this gameObject will became of type `DontDestroyOnLoad`.
 
- * If you want to explore the [Interaction System](https://valvesoftware.github.io/steamvr_unity_plugin/articles/Interaction-System.html) scene you'll need to open the SteamVR Input window (under the Window Menu), click yes to copy example jsons, then click Save and Generate to create input actions.
+* Set the level name to load.
 
- * For the most simple example of VR with tracked controllers see the sample scene at /SteamVR/Simple Sample
+* Enable `Auto Trigger On Enable`.
 
- * For a more extensive example including picking up, throwing objects, and animated hands see the Interaction System example at /SteamVR/Interaction System/Samples/Interactions_Example
+* Test!
 
 
-### Support
- If you're having trouble with the plugin the best place to discuss issues is our github here: https://github.com/ValveSoftware/steamvr_unity_plugin/issues/
+You can also use the call `Trigger` to start a level transition and set the values from a script.
 
- If you'd like to discuss features, post guides, and give general feedback please post on the steam forum here: https://steamcommunity.com/app/250820/discussions/7/
+Another posible use, is to call `VR_LoadLevel.Begin` which will spawn a new component.
+
+---
+
+This project was done by Valve. Innerspace doesn't own the code nor is responsible for it's use. 
